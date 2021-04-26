@@ -1,0 +1,43 @@
+
+
+<!DOCTYPE html>
+<head>
+<style>
+  .button {
+    display: block;
+    width: 130px;
+    height: 50px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    
+}
+
+body{
+  background: url('layout.jpg') no-repeat center fixed;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+</style>
+</head>
+<body>
+  <h1>Hi <%= name %></h1>
+  <br>
+  <a class="button" href="home">Inventory</a>
+  <br>
+  <a class="button" href="home">Employee Information</a>
+  <br>
+  <a class="button" href="dis"> Menu</a>
+  <br>
+  <form action="/logout?_method=DELETE" method="POST">
+    <button class="button" type="submit">Log Out</button>
+  </form>
+
+
+</body>
+</html>
